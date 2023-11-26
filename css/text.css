@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.changing-text {
+    font-size: 24px;
+    font-weight: bold;
+    animation: changeColor 2s infinite alternate; /* Animasi warna teks */
+}
+
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    25% {
+        color: green;
+    }
+    50% {
+        color: blue;
+    }
+    75% {
+        color: purple;
+    }
+    100% {
+        color: orange;
+    }
+}
